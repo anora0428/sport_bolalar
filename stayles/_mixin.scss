@@ -1,0 +1,40 @@
+@mixin beforeMix($bgImg, $bgSize: contain, $bgColor: transparent, $bgPos:center, $width: auto, $height: auto, $top:0, $right:0, $left:0, ) {
+  content: "";
+  background-image: url($bgImg);
+  background-size: $bgSize;
+  background-color: $bgColor;
+  background-position: $bgPos;
+  background-repeat: no-repeat;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  width: $width;
+  height: $height;
+  margin: auto;
+  position: absolute;
+ 
+
+}
+
+@mixin backgroundImg($bgImg, $bgSize: contain, $bgColor: transparent, $bgPos:center, ) {
+  background-image: url($bgImg);
+  background-size: $bgSize;
+  background-color: $bgColor;
+  background-position: $bgPos;
+  background-repeat: no-repeat;
+}
+
+%transition {
+  transition: all ease 0.5s;
+}
+
+@mixin textStayle($size, $weight, $style, $lineHeight, $color, $spacing) {
+  font-size: $size;
+  font-weight: $weight;
+  font-style: $style;
+  line-height: $lineHeight;
+  color: $color;
+  letter-spacing: $spacing;
+  
+}
